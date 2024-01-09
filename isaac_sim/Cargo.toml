@@ -1,0 +1,28 @@
+[package]
+name = "isaac_sim"
+authors.workspace = true
+categories.workspace = true
+description.workspace = true
+edition.workspace = true
+keywords.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+
+[dependencies]
+autocxx = { workspace = true }
+builder_derive_more = { workspace = true }
+ctor = { workspace = true }
+derive_builder = { workspace = true }
+derive_more = { workspace = true }
+omniverse = { workspace = true }
+pxr = { workspace = true }
+semver = { workspace = true }
+thiserror = { workspace = true }
+
+[lib]
+name = "isaac_sim"
+path = "src/lib.rs"
+crate-type = ["rlib"]

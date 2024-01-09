@@ -1,0 +1,40 @@
+[workspace]
+members = [
+    # Rust interface for Isaac Sim
+    "isaac_sim",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["Andrej Orsula <orsula.andrej@gmail.com>"]
+categories = ["science::robotics", "simulation"]
+description = "Rust interface for Isaac Sim"
+edition = "2021"
+keywords = ["isaac_sim", "omniverse", "usd", "simulation"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/AndrejOrsula/isaac_sim_rs"
+rust-version = "1.70"
+version = "0.1.0"
+
+[workspace.dependencies]
+autocxx = { version = "0.26" }
+builder_derive_more = { version = "0.1" }
+ctor = { version = "0.2" }
+derive_builder = { version = "0.12" }
+derive_more = { version = "0.99" }
+omniverse = { version = "0.1" }
+pxr = { version = "0.1" }
+semver = { version = "1" }
+thiserror = { version = "1.0" }
+
+
+[patch.crates-io]
+# Until https://github.com/rust-lang/rust-bindgen/pull/2423 is merged into autocxx-bindgen
+autocxx-bindgen = { git = "https://github.com/AndrejOrsula/autocxx_bindgen", branch = "fix_union_template" }
+# Adds `use_cxx11_abi` feature that allows enabling/disabling CXX11 ABI during compilation (for C++ std::string compatibility)
+cxx = { git = "https://github.com/AndrejOrsula/cxx", branch = "dev_pxr" }
+# (ugly hack) Includes hardcoded allowlist for double underscore identifiers - __pxrReserved__ namespace
+cxx-gen = { git = "https://github.com/AndrejOrsula/cxx", branch = "dev_pxr" }
+# (ugly hack) Includes hardcoded allowlist for double underscore identifiers - __pxrReserved__ namespace
+autocxx-engine = { git = "https://github.com/AndrejOrsula/autocxx", branch = "dev_pxr" }
