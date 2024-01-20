@@ -1,10 +1,13 @@
 # isaac_sim_rs
 
 <p align="left">
-  <a href="https://crates.io/crates/isaac_sim">                                        <img alt="crates.io" src="https://img.shields.io/crates/v/isaac_sim.svg"></a>
-  <a href="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/rust.yml">   <img alt="Rust"      src="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/rust.yml/badge.svg"></a>
-  <!-- <a href="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/docker.yml"> <img alt="Docker"    src="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/docker.yml/badge.svg"></a> -->
-  <a href="https://codecov.io/gh/AndrejOrsula/isaac_sim_rs">                           <img alt="codecov"   src="https://codecov.io/gh/AndrejOrsula/isaac_sim_rs/branch/main/graph/badge.svg"></a>
+  <a href="https://crates.io/crates/isaac_sim">                                        <img alt="crates.io"  src="https://img.shields.io/crates/v/isaac_sim.svg"></a>
+  <!-- <a href="https://docs.rs/isaac_sim">                                                 <img alt="docs.rs"    src="https://docs.rs/isaac_sim/badge.svg"></a> -->
+  <a href="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/rust.yml">   <img alt="Rust"       src="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/rust.yml/badge.svg"></a>
+  <!-- <a href="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/docker.yml"> <img alt="Docker"     src="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/docker.yml/badge.svg"></a> -->
+  <a href="https://deps.rs/repo/github/AndrejOrsula/isaac_sim_rs">                     <img alt="deps.rs"    src="https://deps.rs/repo/github/AndrejOrsula/isaac_sim_rs/status.svg"></a>
+  <a href="https://codecov.io/gh/AndrejOrsula/isaac_sim_rs">                           <img alt="codecov.io" src="https://codecov.io/gh/AndrejOrsula/isaac_sim_rs/branch/main/graph/badge.svg"></a>
+
 </p>
 
 Rust interface for NVIDIA [Isaac Sim](https://developer.nvidia.com/isaac-sim).
