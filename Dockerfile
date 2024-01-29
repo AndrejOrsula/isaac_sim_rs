@@ -93,7 +93,6 @@ RUN ISAAC_SIM_VERSION="$(cut -d'-' -f1 < "${ISAAC_SIM_PATH}/VERSION")" && \
     echo "export ISAAC_SIM_PATH=\"${ISAAC_SIM_PATH}\"" >> /entrypoint.bash && \
     echo "export CARB_APP_PATH=\"${CARB_APP_PATH}\"" >> /entrypoint.bash && \
     echo "export OMNI_SERVER=\"http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/${ISAAC_SIM_VERSION}\"" >> /entrypoint.bash && \
-    echo "export PYTHONEXE=\"$(which python3)\"" >> /entrypoint.bash && \
     echo "export OMNI_KIT_ALLOW_ROOT=\"1\"" >> /entrypoint.bash && \
     echo "# source \"${CARB_APP_PATH}/setup_python_env.sh\" --" >> /entrypoint.bash && \
     echo "# source \"${ISAAC_SIM_PATH}/setup_python_env.sh\" --" >> /entrypoint.bash
