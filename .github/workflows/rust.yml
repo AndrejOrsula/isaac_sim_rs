@@ -44,6 +44,16 @@ jobs:
     env:
       ISAAC_SIM_PATH: "${{ github.workspace }}/isaac_sim_dummy"
     steps:
+      ## Free up space by removing unnecessary files
+      - name: Maximize build space
+        uses: AdityaGarg8/remove-unwanted-software@v3
+        with:
+          remove-android: "true"
+          remove-codeql: "true"
+          remove-docker-images: "true"
+          remove-dotnet: "true"
+          remove-haskell: "true"
+
       - uses: actions/checkout@v4
       - uses: Swatinem/rust-cache@v2
         with:
