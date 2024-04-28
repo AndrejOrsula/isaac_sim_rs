@@ -15,16 +15,16 @@ license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/AndrejOrsula/isaac_sim_rs"
 rust-version = "1.70"
-version = "0.1.0"
+version = "0.2.0"
 
 [workspace.dependencies]
 autocxx = { version = "0.26" }
 builder_derive_more = { version = "0.1" }
 ctor = { version = "0.2" }
-derive_builder = { version = "0.13" }
+derive_builder = { version = "0.20" }
 derive_more = { version = "0.99" }
-omniverse = { version = "0.1" }
-pxr = { version = "0.1" }
+omniverse = { version = "0.2" }
+pxr = { version = "0.2" }
 semver = { version = "1" }
 thiserror = { version = "1.0" }
 

@@ -7,7 +7,6 @@
   <!-- <a href="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/docker.yml"> <img alt="Docker"     src="https://github.com/AndrejOrsula/isaac_sim_rs/actions/workflows/docker.yml/badge.svg"></a> -->
   <a href="https://deps.rs/repo/github/AndrejOrsula/isaac_sim_rs">                     <img alt="deps.rs"    src="https://deps.rs/repo/github/AndrejOrsula/isaac_sim_rs/status.svg"></a>
   <a href="https://codecov.io/gh/AndrejOrsula/isaac_sim_rs">                           <img alt="codecov.io" src="https://codecov.io/gh/AndrejOrsula/isaac_sim_rs/branch/main/graph/badge.svg"></a>
-
 </p>
 
 Rust interface for NVIDIA [Isaac Sim](https://developer.nvidia.com/isaac-sim).
@@ -41,11 +40,9 @@ export CARB_APP_PATH="$ISAAC_SIM_PATH/kit"
 
 Add `isaac_sim` as a Rust dependency to your [`Cargo.toml`](https://doc.rust-lang.org/cargo/reference/manifest.html) manifest.
 
-<!-- TODO[doc]: Update Cargo.toml dependency once the package can be reliably used from https://crates.io -->
-
 ```toml
 [dependencies]
-isaac_sim = { git = "https://github.com/AndrejOrsula/isaac_sim_rs.git" }
+isaac_sim = { version = "0.2" }
 ```
 
 Note that the first build might take up to 50 minutes because OpenUSD will be automatically downloaded and compiled with the `vendored` feature enabled. The artifacts will be cached in `OUT_DIR` and reused for subsequent builds.
